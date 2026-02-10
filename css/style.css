@@ -1,0 +1,65 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f6f5;
+    margin: 0;
+    padding: 20px;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 149px;
+    height: 91px;
+    object-fit: contain;
+}
+.hachimura {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.hachimura img {
+    width: 600px;
+    height: 323px;
+    object-fit: contain;
+}
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 3.5rem;
+}
+.cta-button {
+    display: inline-block;
+    background-color: #751c4f;
+    color: white;
+    padding: 14px 32px;
+    border-radius: 980px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s;
+    font-size: 1.05rem;
+    margin: 0 auto;
+    display: block;
+    width: fit-content; 
+}
+.answers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes égales */
+    gap: 20px;
+}
+
+/* STYLE DES CARTES ANNÉES */
+.year-card {
+    text-decoration: none; /* Enlève le soulignement des liens */
+    background: #f8f9fa;
+    border-radius: 15px;
+    padding: 25px 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    display: block; /* Pour que le lien prenne toute la carte */
+}
