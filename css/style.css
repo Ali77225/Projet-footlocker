@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 /* style css de la page d'accueil (index.html) */
@@ -146,45 +147,21 @@ h4 {
     transition: all 0.3s ease;
     border: 2px solid transparent;
 }
-/* ==========================================================
-   VERSION TABLETTE (max 768px)
-   ========================================================== */
-@media screen and (max-width: 768px) {
-    .page-accueil {
-        padding: 20px;
-    }
 
-    .hachimura img {
-        width: 70%; /* Image un peu plus petite que sur ordi */
-        height: auto;
-    }
 
-    p {
-        font-size: 40px;
-        padding: 0 20px;
-    }
 
-    .answers-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 colonnes sur tablette */
-        gap: 15px;
-        padding: 20px;
-    }
-}
-
-/* ==========================================================
-   VERSION MOBILE UNIVERSELLE (Smartphone & Petits écrans)
-   ========================================================== */
+/* VERSION MOBILE UNIVERSELLE (Smartphone & Petits écrans) */
 @media screen and (max-width: 480px) {
-    
-    .page-accueil, .page-question1 {
-        padding: 5vh 5vw; /* Espacement basé sur la hauteur/largeur de l'écran */
-        justify-content: flex-start; /* Évite que le contenu soit écrasé en haut/bas */
+
+    .page-accueil,
+    .page-question1 {
+        padding: 5vh 5vw;
+        justify-content: flex-start;
         overflow-x: hidden;
     }
 
-    /* --- PAGE ACCUEIL --- */
     .logo img {
-        width: 25vw; /* S'adapte à la largeur du téléphone */
+        width: 25vw;
         max-width: 100px;
         height: auto;
     }
@@ -201,8 +178,7 @@ h4 {
     }
 
     p {
-        /* font-size fluide : min 24px, max 35px selon l'écran */
-        font-size: clamp(24px, 8vw, 35px); 
+        font-size: clamp(24px, 8vw, 35px);
         line-height: 1.2;
         margin: 3vh 0;
         width: 100%;
@@ -216,7 +192,7 @@ h4 {
         margin: 2vh auto;
     }
 
-    /* --- PAGE QUESTION --- */
+
     h1 {
         font-size: clamp(18px, 5vw, 24px);
         margin: 2vh 0;
@@ -243,13 +219,12 @@ h4 {
         line-height: 1.2;
     }
 
-    /* --- GRILLE DE RÉPONSES --- */
     .answers-grid {
         display: flex;
-        flex-direction: column; /* Pile les boutons verticalement */
+        flex-direction: column;
         width: 100%;
         gap: 12px;
-        padding-bottom: 30px; /* Espace pour scroller sur petit écran */
+        padding-bottom: 30px;
     }
 
     .year-card {
@@ -258,7 +233,6 @@ h4 {
         width: 100%;
         background-color: rgba(255, 255, 255, 0.1);
         border: 2px solid rgba(255, 255, 255, 0.4);
-        /* Empêche le texte de dépasser si c'est long */
         word-wrap: break-word;
     }
 }
