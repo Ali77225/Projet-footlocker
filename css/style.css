@@ -75,17 +75,45 @@ p {
     font-size: 1.1rem;
 }
 
-/* Style css de la page de la question (question.html) */
+/* Style css des page liées aux question */
 .page-question1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
     font-family: Arial, sans-serif;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 2)), url(../images/rui.webp);
-    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 2)), url(../images/RUIHACHIMURA1.webp);
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: #4d4747;
+
+}
+
+.page-question2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 2)), url(../images/HACHIMURAQ2.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #4d4747;
+}
+
+.page-question3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 2)), url(../images/rui.webp);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #4d4747;
 }
 
 h1 {
@@ -118,7 +146,7 @@ h2 {
 h3 {
     color: #8E8E8E;
     font-family: 'Rammetto One', cursive;
-    font-size: 35px;
+    font-size: 32px;
 }
 
 h4 {
@@ -128,7 +156,7 @@ h4 {
     text-align: center;
     color: #faf7f7;
     font-family: 'Rammetto One', cursive;
-    font-size: 50px;
+    font-size: 41px;
     margin: 30px;
 }
 
@@ -146,6 +174,36 @@ h4 {
     transition: all 0.3s ease;
     border: 2px solid transparent;
 }
+
+/*style css de la page finale */
+.page-finale {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #552583, #FDB927);
+    margin: 0;
+
+
+}
+
+.logo-finale {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-finale img {
+    width: 120px;
+    height: 70px;
+    object-fit: contain;
+}
+
 /* ==========================================================
    VERSION TABLETTE (max 768px)
    ========================================================== */
@@ -155,7 +213,8 @@ h4 {
     }
 
     .hachimura img {
-        width: 70%; /* Image un peu plus petite que sur ordi */
+        width: 70%;
+        /* Image un peu plus petite que sur ordi */
         height: auto;
     }
 
@@ -165,7 +224,8 @@ h4 {
     }
 
     .answers-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 colonnes sur tablette */
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 colonnes sur tablette */
         gap: 15px;
         padding: 20px;
     }
@@ -175,16 +235,20 @@ h4 {
    VERSION MOBILE UNIVERSELLE (Smartphone & Petits écrans)
    ========================================================== */
 @media screen and (max-width: 480px) {
-    
-    .page-accueil, .page-question1 {
-        padding: 5vh 5vw; /* Espacement basé sur la hauteur/largeur de l'écran */
-        justify-content: flex-start; /* Évite que le contenu soit écrasé en haut/bas */
+
+    .page-accueil,
+    .page-question1 {
+        padding: 5vh 5vw;
+        /* Espacement basé sur la hauteur/largeur de l'écran */
+        justify-content: flex-start;
+        /* Évite que le contenu soit écrasé en haut/bas */
         overflow-x: hidden;
     }
 
     /* --- PAGE ACCUEIL --- */
     .logo img {
-        width: 25vw; /* S'adapte à la largeur du téléphone */
+        width: 25vw;
+        /* S'adapte à la largeur du téléphone */
         max-width: 100px;
         height: auto;
     }
@@ -202,7 +266,7 @@ h4 {
 
     p {
         /* font-size fluide : min 24px, max 35px selon l'écran */
-        font-size: clamp(24px, 8vw, 35px); 
+        font-size: clamp(24px, 8vw, 35px);
         line-height: 1.2;
         margin: 3vh 0;
         width: 100%;
@@ -246,10 +310,12 @@ h4 {
     /* --- GRILLE DE RÉPONSES --- */
     .answers-grid {
         display: flex;
-        flex-direction: column; /* Pile les boutons verticalement */
+        flex-direction: column;
+        /* Pile les boutons verticalement */
         width: 100%;
         gap: 12px;
-        padding-bottom: 30px; /* Espace pour scroller sur petit écran */
+        padding-bottom: 30px;
+        /* Espace pour scroller sur petit écran */
     }
 
     .year-card {
