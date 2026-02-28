@@ -178,7 +178,7 @@ h4 {
 
 /*style css de la page finale */
 .page-finale {
-    display: flex;
+   display: flex;
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
